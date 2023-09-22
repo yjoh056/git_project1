@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+	 
+	<!DOCTYPE html>
+	<html lang="ko">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/pcms/common/css/common.css" />
+	<link rel="stylesheet" href="/pcms/common/css/error.min.css" />
+	<script src="/pcms/common/pluigs/jQuery/jquery-1.12.4.min.js"></script>
+	<script src="/pcms/common/pluigs/jQueryUI/jquery-ui.min.js"></script>
+	<script language="javascript">
+		function fncGoAfterErrorPage() {
+			history.back(-2);
+		}
+	</script>
+	</head>
+	<body>
+		<div class="page_error">
+			<div class="cont_error">
+			<b>PAGE NOT FOUND</b>
+			<h2 class="tit_error">원하시는 페이지를 <span class="emph_txt">찾을 수가 없습니다.</span></h2>
+			<p class="desc_error">
+			서비스 이용에 불편을 드려 죄송합니다.<br>찾으시려는 페이지는 주소를 잘못 입력하였거나 페이지 주소의 변경 또는 삭제등의 <span>이유로 페이지를 찾을 수 없습니다.</span><br>
+			입력하신 페이지의 주소와 경로가 정확한지 <span>한번 더 확인 후 이용하시기 바랍니다.</span>
+			</p>
+
+
+
+				
+
+			<div class="info_link">
+			<a href="/" class="link_error">대표홈페이지 바로가기</a>
+			<a href="javascript:fncGoAfterErrorPage();" class="link_error ">이전화면</a>
+			</div>
+			<div class="foot_error" role="contentinfo"><small class="info_copyright">ALL RIGHTS RESERVED.</small></div>
+			</div>
+			</div>
+		
+	</body>
+	</html>
+
+

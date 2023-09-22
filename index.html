@@ -5,45 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유성구 문화관광</title>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
     <div class="wrap">
+        <!-- //skip navigation  -->
+        <div id="skip_navi">
+            <a href="#body">본문 바로가기</a>
+            <a href="#gnb">대메뉴 바로가기</a>
+        </div>
+        <!-- //skip navigation  -->
         <header>
             <div class="utility">
                 <div class="contanier">
-                    <ul>
-                        <li>문화관광</li>
-                        <li>보건소</li>
-                        <li>유성구의회</li>
-                        <li>평생학습센터&통합도서관</li>
-                        <li>동행정복지센터</li>
-                        <li>유성구 홈페이지 더보기</li>
+                    <ul class="top_menu_list">
+                        <li class="top_menu1"><a href="#">문화관광</a>
+                        </li>
+                        <li class="top_menu1"><a href="#">보건소</a></li>
+                        <li class="top_menu1"><a href="#">유성구의회</a></li>
+                        <li class="top_menu1"><a href="#">평생학습센터&통합도서관</a></li>
+                        <li class="top_menu1"><a href="#">동행정복지센터</a></li>
+                        <li class="top_menu1"><a href="#"><span class="yuseong-img">유성구 홈페이지 더보기</span></a></li>
                     </ul>
                 </div>
             </div>
-            <nav>
-                <h1 class="logo">LOGO</h1>
-                <span class="sitemap">menu</span>
-                <div class="contanier">
-                    <ul>
-                        <li>온천도시 유성</li>
-                        <li>유성 명소</li>
-                        <li>추천여행</li>
-                        <li>축제·공연</li>
-                        <li>숙박·음식·쇼핑</li>
-                        <li>여행 가이드</li>
+            <nav id="gnb">
+                <h1 class="logo"><a href="#" title="새창열림"></a><span class="logo-yuseog">유성구</span></a><em
+                        class="ys_clut"><a href="#">문화관광</a></em></h1>
+                <div class="menu-wrap">
+                    <ul class="ham-menu">
+                        <li class="pc-menu"><a href="#"><img src="./image/menu.png" alt="" title="sitemap"></a></li>
+                        <li class="mobile-menu">menu</li>
                     </ul>
+                    <div class="contanier">
+                        <ul class="depth1-li">
+                            <li class="depth1-menu"><a href="#">온천도시 유성</a>
+                                <div class="depth2">
+                                    <ul class="depth2-menu1">
+                                        <li class="dep2_1title">온천도시 유성</li>
+                                        <li class="dep2_1txt">다함께 더 좋은 유성!<br>
+                                            과학과 온천의 관광도시 유성입니다.</li>
+                                        <li class="dep2_1img"><img src="" alt=""></li>
+                                    </ul>
+                                    <ul class="depth2-menu2">
+                                        <li class="dep2_2li"><a href="#">유성온천이란?</a>
+                                            <ul class="depth3-menu3">
+                                                <li class="dep3_1li"><a href="#">유성온천에 대하여</a></li>
+                                                <li class="dep3_1li"><a href="#">유성온천 유래</a></li>
+                                                <li class="dep3_1li"><a href="#">유성온천의 역사</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_2li"><a href="#">족욕체험장 안내</a></li>
+                                        <li class="dep2_2li"><a href="#">한방족욕장 안내</a></li>
+                                        <li class="dep2_2li"><a href="#">온천수 사용 업소</a></li>
+                                        <li class="dep2_2li"><a href="#">온천욕 하는법</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="depth1-menu"><a href="#">유성 명소</a></li>
+                            <li class="depth1-menu"><a href="#">추천여행</a></li>
+                            <li class="depth1-menu"><a href="#">축제·공연</a></li>
+                            <li class="depth1-menu"><a href="#">숙박·음식·쇼핑</a></li>
+                            <li class="depth1-menu"><a href="#">여행 가이드</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
         <!-- //header -->
-        <main>
+        <main class="main" id="body">
             <div class="banner_hero">
                 <div class="contanier">
-                    banner_hero
+                    <div class="main_title">
+                        <p class="h1 title1">모이고 떠들고 먹고 즐기는</p>
+                        <p class="h4 title2"><span>천년온천</span> 유성의 <span>도시미학</span></p>
+                    </div>
+                    <div class="slid_wrap">
+                        <ul class="slid_list">
+                            <li class="slid1"></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="contents1">
@@ -69,6 +115,11 @@
             </div>
         </footer>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="fitvids.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- <script src="./js/basic.js"></script> -->
 </body>
 
 </html>

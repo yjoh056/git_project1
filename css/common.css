@@ -1,0 +1,137 @@
+.utility {
+    visibility: hidden;
+    display: none;
+}
+
+.logo {
+    color: var(--background);
+    top: 20%;
+}
+
+nav {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.logo span {
+    background: url(../image/logo.svg) center center/contain no-repeat;
+}
+.depth1-li {
+    visibility: hidden;
+}
+
+header .depth2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: var(--text1);
+    display: flex;
+    flex-flow: row wrap;
+    background: var(--background);
+    visibility: hidden;
+}
+
+.pc-menu {
+    display: none;
+}
+.depth2-menu1 {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.depth2-menu2 {
+    display: flex;
+    padding-left: 5rem;
+}
+
+.dep2_2li {
+    padding: 3rem 1rem;
+    line-height: 3rem;
+    height: 3rem;
+}
+
+.depth3-menu3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dep3_1li {
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.banner_hero {
+    margin: auto;
+}
+
+@media screen and (min-width:767px) {
+    .wrap::before {
+        left: -250px;
+    }
+
+    .utility {
+        height: 5rem;
+        visibility: visible;
+        display: block;
+        margin: auto;
+    }
+
+    .utility .contanier {
+        max-width: 800px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+    }
+
+    .utility .top_menu_list li {
+        display: inline;
+        line-height: 5rem;
+        padding-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+
+    .wrap::before {
+        left: -300px;
+    }
+
+    .utility .contanier {
+        max-width: 1200px;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 100%;
+    }
+
+    nav {
+        width: 100%;
+        height: 9rem;
+    }
+
+    nav .contanier .depth1-li {
+        display: flex;
+        gap: 4rem;
+    }
+
+    nav .logo {
+        font-size: 23px;
+    }
+
+    nav .contanier {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 140rem;
+        margin: auto;
+        height: inherit;
+        text-align: center;
+    }
+
+    nav .contanier .depth1-li {
+        visibility: visible;
+    }
+}
