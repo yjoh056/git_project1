@@ -34,15 +34,15 @@ header {
 .utility {
     width: 100%;
     height: 5rem;
-    margin: auto;
 }
 
 .utility .contanier {
     width: 100%;
     max-width: 1200px;
     display: flex;
-    justify-content: flex-end;
-    font-size: 100%;
+    justify-content: center;
+    font-size: 100%;    
+    margin: auto;
 }
 
 
@@ -74,14 +74,6 @@ nav {
     font-size: 20px;
 }
 
-.banner_hero .contanier {
-    max-width: 1400px;
-    width: 100%;
-    height: 500px;
-    margin: auto;
-}
-
-
 
 .ham-menu {
     position: absolute;
@@ -109,7 +101,7 @@ nav li {
 
 .banner_hero {
     width: 100%;
-    height: 100%vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -117,9 +109,16 @@ main {
     width: 100%;
 }
 
-
-main .banner_hero .contanier {
+.banner_hero .contanier {
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
     margin-top: 140px;
+}
+
+.contanier{
+    max-width: 1200px;
+    margin: auto;
 }
 
 .contents1 {

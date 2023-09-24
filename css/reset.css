@@ -141,11 +141,16 @@ table {
 }
 
 :root {
-    --primary: #049DD9;
-    --secondary: #D2D904;
+    --primary: #0B77C1;
+    --secondary: #089788;
+    --third: #1053a5;
+    --butt:#4d647a;
+    --accent: #d5403c;
     --text1: #333;
-    --text2: #666;
+    --text2: #fff;
+    --text3: #07839d;
     --background: #ffffff;
+    --background2: #f7f7f7;
 }
 
 html {
@@ -173,21 +178,30 @@ a:hover {
 
 h1,
 .h1 {
-    font-size: 3.1rem;
-    font-weight: 700;
+    font-size: 5rem;
+    font-weight: 300;
 }
 
 h2,
 .h2 {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 3.1rem;
+    font-weight: 700;
 }
 
 h3,
 .h3 {
+    
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+h4,
+.h4 {
+        
     font-size: 2rem;
     font-weight: 400;
 }
+
+
 
 .caption {
     font-size: 1.3rem;
