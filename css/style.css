@@ -166,7 +166,6 @@ header .depth2 {
 .contanier {
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
 main .banner_hero {
@@ -744,6 +743,7 @@ button.more-ct::after {
     height: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
 }
 
 .contents2 .contanier .cont-tit .title span {
