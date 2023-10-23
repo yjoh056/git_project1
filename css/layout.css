@@ -14,6 +14,7 @@
 .skip_menu:focus {
     transform: translateY(0%);
 }
+.df{display:flex;}
 
 .wrap {
     width: 100%;
@@ -25,7 +26,6 @@
 
 
 header {
-    position: absolute;
     width: 100%;
     background: #3779dc;
     color: var(--background);
@@ -36,12 +36,12 @@ header {
     height: 5rem;
 }
 
-.utility .contanier {
+.utility .container {
     width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: center;
-    font-size: 100%;    
+    font-size: 100%;
     margin: auto;
 }
 
@@ -82,14 +82,14 @@ nav {
 }
 
 
-nav .contanier {
+nav .container {
     position: relative;
     max-width: 1200px;
     width: 100%;
     margin: auto;
 }
 
-nav .contanier .depth1 {
+nav .container .depth1 {
     position: absolute;
     right: 0;
 }
@@ -108,35 +108,13 @@ main {
     width: 100%;
 }
 
-.banner_hero .contanier {
+.banner_hero .container {
     max-width: 1400px;
     width: 100%;
-    margin: auto;
-    margin-top: 140px;
 }
 
-.contanier{
+.container{
     max-width: 1200px;
     margin: auto;
-}
-
-.contents2 {
-    height: 90rem;
-}
-
-
-.contents3 {
-    height: 60rem;
-}
-
-.contents4 {
-    height: 20rem;
-}
-
-.contents5 {
-    height: 20rem;
-}
-
-footer {
-    height: 30rem;
+    width: 100%;
 }
