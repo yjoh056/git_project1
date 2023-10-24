@@ -513,6 +513,10 @@ button.more::after {
     color: var(--butt);
 }
 
+.container .cont-tit .title {
+    position: relative;
+}
+
 .container .cont-tit .title span {
     display: inline-block;
     max-width: 154px;
@@ -794,7 +798,7 @@ button.more-ct::after {
     padding-right: 1rem;
     position: absolute;
     left: 26.8%;
-    top: -6.7%;
+    top: -87.7%;
 }
 
 .vr_link {
@@ -809,35 +813,45 @@ button.more-ct::after {
     width: 648px;
     height: 756px;
     background: url(../image/map.png) no-repeat;
+
 }
 
 .slide_wrap {
-	position: relative;
-	width: 100%;
-	max-width: 1280px;
-	height: 100%;
-	min-height: 400px;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    min-height: 400px;
+    padding-bottom: 195px;
+}
+
+.slide_wrap .control {
+    display: block;
+    max-width: 60rem;
+    width: 110%;
+    position: absolute;
+    top: 30%;
 }
 
 .slide_wrap .control .pre,
-.slide_wrap .control .next{
-    top: 50%;
+.slide_wrap .control .next {
+
     z-index: 99999;
 }
 
-.slide_wrap .control .pre{
+.slide_wrap .control .pre {
     left: 0;
 }
-.slide_wrap .control .next{
+
+.slide_wrap .control .next {
     right: 0;
 }
 
 .photo_slider {
-	top: 150px;
-	position: absolute;
-	z-index: 3;
+    top: 150px;
+    position: absolute;
+    z-index: 3;
     width: 60rem;
-    height: 35rem;
     overflow: hidden;
     border-radius: 17px;
     background-color: var(--background);
@@ -845,14 +859,15 @@ button.more-ct::after {
 }
 
 .photo_lists .slick-arrow.slick-prev {
-	top: 188px;
-	left:0;
-	z-index: 999;
+    top: 188px;
+    left: 0;
+    z-index: 999;
 }
+
 .photo_lists .slick-arrow.slick-next {
-	top: 188px;
-	right:0;
-	z-index: 999;
+    top: 188px;
+    right: 0;
+    z-index: 999;
 }
 
 .map-card {
@@ -882,6 +897,12 @@ button.more-ct::after {
     background-color: #3779dc;
     box-shadow: 1px 1px 1px rgba(121, 121, 121, 0.5);
     margin: 2rem;
+    overflow: hidden;
+}
+
+.place-img img {
+    height: 100%;
+    align-self: center;
 }
 
 .infor-txtbox .infor-tit {
@@ -920,16 +941,23 @@ button.more-ct::after {
     height: 30px;
     background-image: url(../image/main_ir.png);
     position: relative;
+    bottom: -6px;
+    left: -10px;
 }
 
-.num1 .top-infor .place-img {
-    background: url(../image/mcont2_img01.jpg) center center/cover no-repeat;
+.bottom-button .ert-vr span {
+    background-position: -36px -27px;
 }
+
+.bottom-button .sky-vr span {
+    background-position: -62px -27px;
+}
+
 
 .contents3,
 .contents4,
 .contents5 {
-    background-color: var(--secondary);
+    background-color: #3ca479;
     color: var(--text2);
     position: relative;
 }
@@ -943,11 +971,15 @@ button.more-ct::after {
     margin: auto;
 }
 
+.part span {
+    display: inline-block;
+}
+
 .part .part-lft,
 .part .peple,
 .part .part-rigt {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
 }
 
 .part .part-lft {
@@ -958,6 +990,8 @@ button.more-ct::after {
 
 .part .part-lft span {
     background: url(../image/mcont3_il3_1.png) center center no-repeat;
+    width: 453px;
+    height: 321px;
 }
 
 .peple {
@@ -970,13 +1004,17 @@ button.more-ct::after {
 
 .peple span:nth-last-of-type(1) {
     background: url(../image/mcont3_il1_2.png)center center no-repeat;
+    width: 156px;
+    height: 113px;
 }
 
 .peple span:nth-last-of-type(2) {
     background: url(../image/mcont3_il1_3.png)center center no-repeat;
+    width: 156px;
+    height: 113px;
 }
 
-.peple img {
+.peple span {
     position: absolute;
     width: 156px;
     height: 113px;
@@ -989,12 +1027,14 @@ button.more-ct::after {
 
 .part .part-rigt span {
     background: url(../image/mcont3_il4.png)center center no-repeat;
+    width: 379px;
+    height: 534px;
 }
 
 .part .part-back {
     position: absolute;
     z-index: -100;
-    background-color: var(--secondary);
+    background-color: #3ca479;
     width: 100vw;
     height: 100%;
 }
@@ -1006,15 +1046,14 @@ button.more-ct::after {
     width: 100%;
     height: 14rem;
     z-index: -10;
-    background: var(--secondary);
+    background: #3ca479;
     border-radius: 60%;
     overflow: hidden;
 }
 
 /* //part */
-
 .contents3 .container {
-    flex-direction: column;
+    max-width: 1400px;
 }
 
 .contents3 .cont-tit {
@@ -1026,24 +1065,208 @@ button.more-ct::after {
     font-weight: 300;
 }
 
-.container .cont3-boxwrap {
-    margin-top: 10rem;
-    width: 100%;
-    height: 60rem;
-    display: flex;
-    justify-content: space-between;
-    line-height: 4rem;
+.contents3 {
+    position: relative;
+    padding-top: 2rem;
+    color: var(--text2);
+    padding-bottom: 1rem;
+    background: #3ca479;
 }
 
-.container .cont3-boxwrap li {
+/* content3 배경처리*/
+.contents3:before {
+    position: absolute;
+    left: 50%;
+    top: -11%;
+    width: 200%;
+    height: 100%;
+    background: #3ca479;
+    border-radius: 107%;
+    transform: translateX(-50%);
+    content: '';
+    z-index: -1;
+}
+
+.container .cont3 {
+    border-radius: 10rem 0 10rem 0;
+    overflow: hidden;
+    margin: 3rem 10rem 4.5rem;
+    display: grid;
+    grid-template-areas:
+        'a b c'
+        'a d e';
+    grid-template-columns: repeat(3, 1fr);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    padding: auto;
+}
+
+.container .cont3>* {
+    max-height: calc(516px / 2);
+    height: 100%;
+}
+
+.container .cont3> :nth-child(1) {
+    max-height: 516px;
+    height: 100%;
+    padding: 7rem;
+}
+
+.cont3>.itembox {
+    position: relative;
+    padding: 4rem;
+    line-height: 1.5;
+    letter-spacing: -1px;
+}
+
+.cont3>.itembox .title {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+
+.cont3>.itembox .subtitle {
+    font-size: 1.7rem;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
+}
+
+.cont3 button {
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 20rem;
+    margin-left: 0;
+}
+.cont3 button.sj-butt{
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+}
+
+.cont3 button.box-more {
+    position: absolute;
+}
+
+.cont3 button+span {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+}
+
+.bg1 {
+    grid-area: a;
+    background: #cf9820;
+}
+
+.container .cont3 li {
     line-height: 5rem;
 }
 
-.container .cont3-boxwrap .box2 {
+.cont3 .bg1>ul {
+    padding: 1rem;
     display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-    height: 50%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cont3 .select_box {
+    position: relative;
+}
+
+.cont3 .select_box:before {
+    content: '';
+    position: absolute;
+    width: 152px;
+    height: 142px;
+    background: url(../image/box1_bg.png) no-repeat;
+    background-size: cover;
+    top: -130px;
+    right: -22px;
+}
+
+.cont3 .bg1 .select_box ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.cont3 .bg1 .select_box ul li {
+    display: flex;
+    height: 6rem;
+    line-height: 6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.cont3 .bg1 .select_box ul li span:nth-of-type(1) {
+    width: 60px;
+    height: 100%;
+    background: white;
+    position: relative;
+}
+
+.cont3 .bg1 .select_box ul li span:nth-of-type(1):before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 29px;
+    width: 29px;
+    background: url(../image/main_ir.png);
+    transform: translate(-50%, -50%);
+    content: '';
+    background-position: -93px -27px;
+}
+
+.cont3 .bg1 .select_box ul li span:nth-of-type(2) {
+    width: calc(100% - 60px);
+    height: 100%;
+    background: #e9b546;
+    padding-left: 1rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.icon.box2 {
+    background: url(../image/box2_bg.png) no-repeat;
+}
+
+.icon.box3 {
+    background: url(../image/box3_bg.png) no-repeat;
+}
+
+.icon.box4 {
+    background: url(../image/box4_bg.png) no-repeat;
+}
+
+.icon.box5 {
+    background: url(../image/box5_bg.png) no-repeat;
+}
+
+.bg2 {
+    grid-area: b;
+    background: #008ce5;
+}
+
+.bg3 {
+    grid-area: c;
+    background: #06bfcb;
+}
+
+.bg4 {
+    grid-area: d;
+    background: #1b63c4;
+}
+
+.bg5 {
+    grid-area: e;
+    background: #4f72d6;
 }
 
 .contents4 .container {
