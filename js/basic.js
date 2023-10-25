@@ -25,6 +25,7 @@ $(() => {
         pauseOnHover:$('.hero-control .purse'),
     });
 
+
     $('.card-slot').slick({
         infinite: true,
         slidesToShow: 5,
@@ -40,5 +41,6 @@ $(() => {
         prevArrow: $('.slide_wrap .pre'),
         nextArrow: $('.slide_wrap .next'),
     });
+
 
 });
