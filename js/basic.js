@@ -19,12 +19,34 @@ $(() => {
         autoplay: true,
         autoplaySpeed: 2000,
         pauseOnDotsHover: true,
+        pauseOnFocus: true,
         speed: 2000,
         prevArrow: $('.hero-control .pre'),
         nextArrow: $('.hero-control .next'),
-        pauseOnHover:$('.hero-control .purse'),
     });
 
+    $('.slid_list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        const currentSlideElement = $(slick.$slides[currentSlide]);
+        const nextSlideElement = $(slick.$slides[nextSlide]);
+        const currentSlideTitle = currentSlideElement.find('img').attr('data-title');
+        const nextSlideTitle = nextSlideElement.find('img').attr('data-title');
+        
+        $('.event-title').text(currentSlideTitle).css('opacity', 1).removeClass('active');
+        setTimeout(function() {
+          $('.event-title').text(nextSlideTitle).addClass('active');
+        }, 1000);
+      });
+      
+      $('.slid_list').on('afterChange', function(event, slick, currentSlide) {
+        const activeSlide = $(slick.$slides[currentSlide]);
+        
+        setTimeout(function() {
+          $('.event-title').css('opacity', 0);
+        }, 2000);
+      });
+      
+      
+      
 
     $('.card-slot').slick({
         infinite: true,
@@ -33,6 +55,8 @@ $(() => {
         prevArrow: $('.slot-box .pre'),
         nextArrow: $('.slot-box .next'),
     });
+
+
     $('.photo_lists').slick({
         infinite: true,
         autoplay: false,
@@ -41,6 +65,7 @@ $(() => {
         prevArrow: $('.slide_wrap .pre'),
         nextArrow: $('.slide_wrap .next'),
     });
+
 
 
 });
