@@ -378,6 +378,7 @@ main::before {
 
 .control-btt {
     display: flex;
+    padding-right: 5rem;
 }
 
 .slid-progress {
@@ -388,7 +389,11 @@ main::before {
     overflow: hidden;
     margin: auto;
 }
-
+.slid-progress .bar{
+    width: 0%;
+    height: 100%;
+    background: var(--butt);
+}
 
 /* button */
 button.rd {
@@ -513,17 +518,6 @@ button.more::after {
     position: relative;
 }
 
-.contents1:before {
-    content: '';
-    position: absolute;
-    left: 58%;
-    top: 412px;
-    z-index: -8;
-    width: 1851px;
-    height: 1141px;
-    background: url(../image/mcont2_bg.png) no-repeat;
-    transform: translateX(-50%);
-}
 
 .contents1 .container {
     max-width: 1400px;
@@ -533,6 +527,7 @@ button.more::after {
     margin-top: 20rem;
     text-align: center;
 }
+
 
 .container .cont-subtit {
     padding-top: 2rem;
@@ -568,6 +563,18 @@ button.more::after {
 }
 
 
+.contents1 .cont-tit:before {
+    content: '';
+    position: absolute;
+    left: 58%;
+    top: 412px;
+    z-index: -999;
+    width: 1851px;
+    height: 1141px;
+    background: url(../image/mcont2_bg.png) no-repeat;
+    transform: translateX(-50%);
+}
+
 .contents1 .container .cont-tit .title::after {
     content: '';
     display: inline-block;
@@ -590,6 +597,7 @@ button.more::after {
     justify-content: center;
     padding-top: 3rem;
     gap: 2rem;
+    z-index: 10;
 }
 
 
@@ -745,6 +753,7 @@ button.more-ct::after {
     box-shadow: 5px 1px 10px rgba(121, 121, 121, 0.5);
     margin: 0 1rem;
     overflow: hidden;
+    background: white;
 }
 
 .item-card img {
