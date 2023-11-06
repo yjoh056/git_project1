@@ -53,6 +53,19 @@ nav .logo {
     font-size: 23px;
     color: var(--background);
     top: 20%;
+    line-height: 60px;
+}
+
+.logo em,
+.logo a {
+    line-height: 60px;
+}
+
+.logo-yuseog {
+    display: inline-block;
+    font-size: 0;
+    width: 95px;
+    background: url(../image/logo.svg) center center/contain no-repeat;
 }
 
 
@@ -340,7 +353,7 @@ main::before {
 
 .event-title.active {
     transform: translateX(0);
-  }
+}
 
 
 .sli-tit .top10::after {
@@ -389,7 +402,8 @@ main::before {
     overflow: hidden;
     margin: auto;
 }
-.slid-progress .bar{
+
+.slid-progress .bar {
     width: 0%;
     height: 100%;
     background: var(--butt);
