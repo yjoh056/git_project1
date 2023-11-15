@@ -906,10 +906,11 @@ button.more-ct::after {
 
 .slide_wrap .control {
     display: block;
-    max-width: 60rem;
-    width: 110%;
+    max-width: 66rem;
+    width: 100%;
     position: absolute;
-    top: 30%;
+    top: 34%;
+    left: -33px;
 }
 
 .slide_wrap .control .pre,
@@ -1178,7 +1179,7 @@ button.more-ct::after {
         'a d e';
     grid-template-columns: repeat(3, 1fr);
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-    padding: auto;
+    
 }
 
 .container .cont3>* {
