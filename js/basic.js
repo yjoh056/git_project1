@@ -5,12 +5,30 @@ $(() => {
     const skipNavi = document.querySelector('#skip_navi a');
 
     skipNavi.addEventListener('focus', function () {
-        this.style.transform = 'translateY(100%)';
+      this.style.transform = 'translateY(100%)';
+      this.style.opacity = '1';
     });
-
+    
     skipNavi.addEventListener('blur', function () {
-        this.style.transform = 'translateY(-200%)';
+      this.style.transform = 'translateY(-200%)';
+      this.style.opacity = '0';
     });
+    
+
+    /* gnb*/
+    const dim = $('.dim');
+    const dep1 = $('.depth1-li').find('li');
+    dim.hide();
+    dep1.on('mouseover', function() {
+        const dep2 = $(this).find('.depth2');
+        dep2.css('opacity','1').show();
+        dim.show();
+      }).on('mouseleave', function() {
+        const dep2 = $(this).find('.depth2');
+        dep2.css('opacity','0').hide();
+        dim.hide();
+      });
+    
 
     /* slide */
 
@@ -23,7 +41,7 @@ $(() => {
         nextArrow: $('.hero-control .next'),
     });
 
-    
+
     $('.slid_list').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
         const currentSlideElement = $(slick.$slides[currentSlide]);
@@ -46,9 +64,6 @@ $(() => {
         }, 2000);
 
     });
-
-
-
 
     $('.card-slot').slick({
         infinite: true,

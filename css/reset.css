@@ -171,11 +171,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-a:hover {
-    text-decoration: underline;
+@keyframes line-ani {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
-
 h1,
 .h1 {
     font-size: 5rem;
