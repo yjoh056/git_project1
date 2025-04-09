@@ -24,6 +24,18 @@
     overflow: hidden;
 }
 
+.pop-up-banner {
+    display: block;
+    width: 416px;
+    height: 273px;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+    background: #fff;
+    z-index: 999;
+}
+
+
 
 header {
     width: 100%;

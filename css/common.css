@@ -2,6 +2,9 @@
     visibility: hidden;
     display: none;
 }
+.pop-up-banner{
+    visibility: visible;
+}
 
 .logo {
     color: var(--background);

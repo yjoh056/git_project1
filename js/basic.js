@@ -14,6 +14,15 @@ $(() => {
       this.style.opacity = '0';
     });
     
+    /*
+//pop창 닫기
+*/
+const pagePop =$('.pop-up-banner');
+const ppclose =$('.bt_close');
+ppclose.on('click', function () {
+    pagePop.css('visibility', 'hidden').hide();
+});
+
 
     /* gnb*/
     const dim = $('.dim');

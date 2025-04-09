@@ -132,6 +132,34 @@ nav .container .depth1-li {
     display: none;
 }
 
+/* popup */
+
+.box-top {
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    padding: 0.5rem 3rem;
+    padding-top: 2rem;
+}
+.box-top h3 {
+        color: white;
+    }
+
+
+.box-body {
+    padding: 2em 3em;
+}
+
+.box-body p{margin-bottom: 2rem;}
+
+.box-body button {
+    position: absolute;
+    left: 10%;
+    background: black;
+    padding: 0.5em 1em;
+    color: white;
+}
+
 /* menu */
 
 nav .depth1-li {
